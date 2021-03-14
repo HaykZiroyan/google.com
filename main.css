@@ -10,14 +10,17 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 }
-nav {
+.mobile {
+	display: none;
+}
+.cp {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	margin-right: 30px;
 	margin-top: 14px;
 }
-nav a {
+.cp a {
 	font-size: 13px;
 	display: inline-block;
 	line-height: 24px;
@@ -26,20 +29,20 @@ nav a {
 	cursor: pointer;
 	padding: 5px 6.7px
 }
-nav a:hover {
+.cp a:hover {
 	text-decoration: underline;
 	opacity: .85;
 }
-nav img {
+.cp img {
 	width: 34px;
 	padding: 5px;
 	margin: auto 7px;
 	cursor: pointer;
 }
-nav img:hover {
+.cp img:hover {
 	opacity: .8;
 }
-nav button {
+.cp button {
 	border: 1px solid #4285f4;
 	font-weight: bold;
 	outline: none;
@@ -159,4 +162,116 @@ footer a:hover {
 }
 .botton-right {
 	padding-right: 18.7px;
+}
+.botton-mobile {
+	display: none;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+	padding: 0px;
+  }
+  
+.dropdown-content {
+	display: none;
+	position: absolute;
+	border: 1px solid #cccccc;
+	border-radius: 10px;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	width: 328px;
+	left: -200px;
+	margin-top: 20px;
+	padding-left: 15px;
+	max-height: 450px;
+	overflow: scroll;	
+}
+  
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.dropdown-content div {
+	display: inline-block;
+	width: 95px;
+	margin: 18px 0;
+}
+.dropdown-content div img {
+	height: 45px;
+	width: 45px;
+	margin: 0;
+	padding: 0;
+
+}
+.dropdown-content div p {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	margin-left: 5px;
+}
+@media only screen and (max-width: 1100px) {
+	.cp {
+		display: none;
+	}
+	.mobile {
+		margin-right: 30px;
+		margin-top: 14px;
+		display: flex;
+  		flex-flow: row wrap;
+		margin-left: 14px;
+	}
+	.mobile .left {
+		display: inline-block;
+	}
+	.mobile .left {
+		margin-right: auto;
+	}
+
+	.mobile .left img {
+		width: 30px;
+		height: 30px;
+	}
+
+	.mobile button {
+		border: 1px solid #4285f4;
+		font-weight: bold;
+		outline: none;
+		background: #4285f4;
+		color: #fff;
+		padding: 7px 12px;
+		border-radius: 3px;
+		margin-left: 7px;
+		cursor: pointer;
+	}
+	form {
+		padding: 0 10px;
+	}
+	.s-box {
+		width: 100%;
+		margin: 0px auto;
+		position: relative;
+		margin-top: -8px;
+		text-align: center;
+	}
+	footer {
+		margin-top: 10%;
+	}
+	.botton {
+		display: none;
+	}
+	.botton-mobile {
+		display: block;
+		border-top: 1px solid #ddd;
+		position: relative;
+	}
+	.botton-left, .botton-right {
+		display: flex;
+		justify-content: center;
+		align-items: center;		
+	}
+	.section-1 .logo {
+		width: 40%;
+	}
+
+	
 }
