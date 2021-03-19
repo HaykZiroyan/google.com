@@ -59,7 +59,7 @@ body {
 .section-1 .logo {
 	display: block;
 	margin: 0px auto;
-	margin-top: 107px;
+	margin-top: 30px;
 }
 .s-box {
 	width: 580px;
@@ -166,49 +166,42 @@ footer a:hover {
 .botton-mobile {
 	display: none;
 }
-.dropdown {
-	position: relative;
-	display: inline-block;
-	padding: 0px;
-  }
-  
-.dropdown-content {
-	display: none;
-	position: absolute;
-	border: 1px solid #cccccc;
-	border-radius: 10px;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-	width: 328px;
-	left: -200px;
-	margin-top: 20px;
-	padding-left: 15px;
-	max-height: 450px;
-	overflow: scroll;	
-}
-  
-.dropdown:hover .dropdown-content {
-	display: block;
-}
-.dropdown-content div {
-	display: inline-block;
-	width: 95px;
-	margin: 18px 0;
-}
-.dropdown-content div img {
-	height: 45px;
-	width: 45px;
-	margin: 0;
-	padding: 0;
 
+.hide {
+	display: none;
 }
-.dropdown-content div p {
-	margin: 0;
-	padding: 0;
-	font-size: 12px;
-	margin-left: 5px;
+
+.drop {
+	position: absolute;
+	right: 25px;
+	width: 328px;
+	height: 450px;
+	z-index: 1;
+	background-color: white;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	overflow: auto;
+	padding: 15px;
+	margin-top: 60px;
+	box-shadow: 0 4px 8px 0 #cccccc;
+	
 }
+.drop div {
+	display: inline-block;
+	width: 30%;
+	height: auto;
+	margin: 2px;
+}
+.drop div img {
+	max-width: 60%;
+	height: 40px;
+	margin-top: 5px;
+}
+.drop div p {
+	margin-bottom: 20px;
+}
+
+
 @media only screen and (max-width: 1100px) {
 	.cp {
 		display: none;
@@ -219,6 +212,7 @@ footer a:hover {
 		display: flex;
   		flex-flow: row wrap;
 		margin-left: 14px;
+		padding: 0 20px;
 	}
 	.mobile .left {
 		display: inline-block;
@@ -243,6 +237,10 @@ footer a:hover {
 		margin-left: 7px;
 		cursor: pointer;
 	}
+	.mobile .right div {
+		display: inline-block;
+	}
+	
 	form {
 		padding: 0 10px;
 	}
@@ -272,6 +270,7 @@ footer a:hover {
 	.section-1 .logo {
 		width: 40%;
 	}
-
-	
+	.drop {
+		height: 350px;
+	}
 }
