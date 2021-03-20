@@ -191,6 +191,8 @@ footer a:hover {
 	width: 30%;
 	height: auto;
 	margin: 2px;
+	padding-left: 20px;
+	padding-top: 10px;
 }
 .drop div img {
 	max-width: 60%;

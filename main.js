@@ -9,3 +9,9 @@ function drop() {
         element.classList.add("hide");
     }
 }
+function mouseOver(a) {
+    document.getElementById(a).style.background= '#e8f0fe'
+}
+function mouseOut(a) {
+    document.getElementById(a).style.background = "";
+}
